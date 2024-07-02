@@ -1,0 +1,44 @@
+/* Sidebar.module.scss */
+
+.sidebar {
+  background-color: #343a40;
+  color: #fff;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.mainCategory {
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subCategory {
+  font-size: 18px;
+  padding: 10px 0;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.subCategory:hover {
+  color: #007bff; /* Change to your desired hover color */
+  background-color: #f2f2f2;
+}
+
+.subCategory.active {
+  font-weight: bold;
+}
